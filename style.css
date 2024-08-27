@@ -33,7 +33,7 @@ img {
 }
 
 button {
-  background-color: rgb(44, 44, 240);
+  background-color:var(--color-bg-button);
   color: var(--color-text-button);
   padding: 20px;
   border-radius: 30px;
