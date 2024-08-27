@@ -20,6 +20,10 @@
 .card:has(img) {
     padding: 0; 
 }
+.card:has(img) .content{
+padding: 1rem;
+}
+
 
 
 
