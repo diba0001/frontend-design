@@ -32,8 +32,6 @@ display: grid;
 display: subgrid;
 grid-column: 1/2;
 grid-row: 1/2;
-grid-template-columns: subgrid;
-grid-template-rows: subgrid;
 }
     }
 
