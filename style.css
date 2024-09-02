@@ -2,11 +2,14 @@ section {
     max-width: 1200px;
     padding-inline: 1rem;
 
-    display: grid;
     grid-template-rows: 1fr auto;
     grid-template-columns: 2.5fr 1.5fr 1fr;
     gap: 1.5rlh;
     color: var(--gray-900);
+
+    @media (width > 880px) {
+display: grid; 
+    }
 
     h2 {
         font-size: 2.5rem;
@@ -17,13 +20,22 @@ section {
     }
 
     .content {
+        display: subgrid;
+        grid-column: 2/4;
 
         >*+* {
             margin-top: .75rlh;
         }
     }
 
-    figure {}
+    figure {
+display: subgrid;
+grid-column: 1/2;
+grid-row: 1/2;
+grid-template-columns: subgrid;
+grid-template-rows: subgrid;
+}
+    }
 
     img {
         align-self: stretch;
@@ -38,4 +50,4 @@ section {
         background: var(--gray-100);
         padding: .4rlh .6rlh;
     }
-}
+
